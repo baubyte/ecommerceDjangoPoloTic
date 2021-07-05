@@ -1,0 +1,8 @@
+env/
+website/__pycache__/models.cpython-39.pyc
+website/__pycache__/urls.cpython-39.pyc
+website/__pycache__/views.cpython-39.pyc
+ecommerce/__pycache__/views.cpython-39.pyc
+.vscode/
+website/migrations/__pycache__/
+.env
