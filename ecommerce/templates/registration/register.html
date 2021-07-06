@@ -13,6 +13,22 @@
           <div class="input-group">
             <div class="input-group-prepend">
               <span class="input-group-text">
+                <i class="material-icons">email</i>
+              </span>
+            </div>
+            {{form.email}}
+          </div>
+          {% if form.email.errors %}
+          {% for error in form.email.errors %}
+          <p class="card-text"><small class="form-text text-danger">{{error}}</small></p>
+          {% endfor %}
+          {% else %}
+          <p class="card-text"><small id="userHelp" class="form-text text-muted">{{form.email.help_text}}</small>
+          </p>
+          {% endif %}
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
                 <i class="material-icons">face</i>
               </span>
             </div>
@@ -55,54 +71,6 @@
           {% endfor %}
           {% else %}
           <p class="card-text"><small id="userHelp" class="form-text text-muted">{{form.password2.help_text}}</small>
-          </p>
-          {% endif %}
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text">
-                <i class="material-icons">badge</i>
-              </span>
-            </div>
-            {{form.first_name}}
-          </div>
-          {% if form.first_name.errors %}
-          {% for error in form.first_name.errors %}
-          <p class="card-text"><small class="form-text text-danger">{{error}}</small></p>
-          {% endfor %}
-          {% else %}
-          <p class="card-text"><small id="userHelp" class="form-text text-muted">{{form.first_name.help_text}}</small>
-          </p>
-          {% endif %}
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text">
-                <i class="material-icons">badge</i>
-              </span>
-            </div>
-            {{form.last_name}}
-          </div>
-          {% if form.last_name.errors %}
-          {% for error in form.last_name.errors %}
-          <p class="card-text"><small class="form-text text-danger">{{error}}</small></p>
-          {% endfor %}
-          {% else %}
-          <p class="card-text"><small id="userHelp" class="form-text text-muted">{{form.last_name.help_text}}</small>
-          </p>
-          {% endif %}
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text">
-                <i class="material-icons">email</i>
-              </span>
-            </div>
-            {{form.email}}
-          </div>
-          {% if form.email.errors %}
-          {% for error in form.email.errors %}
-          <p class="card-text"><small class="form-text text-danger">{{error}}</small></p>
-          {% endfor %}
-          {% else %}
-          <p class="card-text"><small id="userHelp" class="form-text text-muted">{{form.email.help_text}}</small>
           </p>
           {% endif %}
         </div>
