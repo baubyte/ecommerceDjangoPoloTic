@@ -22,14 +22,13 @@
 
 <body class="profile-page sidebar-collapse">
   <!-- Cabecera y menu cabecera -->
-  <nav class="main-nav navbar fixed-top navbar-expand-lg bg-success"
-    color-on-scroll="100" id="sectionsNav">
+  <nav class="main-nav navbar fixed-top navbar-expand-lg bg-success" color-on-scroll="100" id="sectionsNav">
     <div class="container">
       <div class="navbar-translate">
         <a class="navbar-brand" href="{% url 'website:index'%}">
           <span class="material-icons">
             nature
-            </span>
+          </span>
           JAGUARETE KAA</a>
         <button class="navbar-toggler" id="main-nav" type="button" data-toggle="collapse" aria-expanded="false"
           aria-label="Toggle navigation">
@@ -42,7 +41,7 @@
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
           {% if user.is_authenticated %}
-          Hola  <i class="material-icons">waving_hand</i>  {{ user.get_username }}
+          Hola <i class="material-icons">waving_hand</i> {{ user.get_username }}
           <li class="nav-item">
             <a class="nav-link" href="{% url 'logout'%}?next={{request.path}}">
               <i class="material-icons">exit_to_app</i> Cerrar Sesión
@@ -170,7 +169,7 @@
       <nav class="float-left">
         <ul>
           <li>
-            JAGUARETE KAA S.A
+            <i class="material-icons">nature</i>JAGUARETE KAA
           </li>
         </ul>
       </nav>
