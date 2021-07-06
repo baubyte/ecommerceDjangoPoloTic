@@ -21,8 +21,8 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include("website.urls")),
-    path('sitio/', include("website.urls")),
+    path('', include("website.urls", namespace="website")),
+    path('sitio/', include("website.urls", namespace="website")),
     path('accounts/', include('django.contrib.auth.urls')),
     path('accounts/register', views.register, name="register"),
     path('accounts/forbidden', views.forbidden, name="forbidden"),
