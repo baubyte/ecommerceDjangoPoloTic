@@ -3,7 +3,7 @@
 {% block content %}
 <!-- Lista de Categorías-->
 <div class="section text-center">
-    <h2 class="title">Tu Carrito</h2>
+    <h2 class="title">Tu Carrito <i class="material-icons">face</i> {{ user.get_username }}</h2>
     <h4 class="title">Ultima Modificación: {{ carrito.updated_at }}</h4>
     <div class="team">
         <div class="row">
