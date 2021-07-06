@@ -14,9 +14,9 @@
 ### Contraseña Usuario Moderador
     adminEcommerce
 
-### Usuario Moderador
+### Usuario Cliente
     cliente
-### Contraseña Usuario Moderador
+### Contraseña Usuario Cliente
     compradorEcommerce
 
 
