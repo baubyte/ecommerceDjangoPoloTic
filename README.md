@@ -2,8 +2,6 @@
 ## Generador de de Secret Key
     https://djecrety.ir/
 
-## Video con Funcionalidad
-    https://youtu.be/Dn37GFsyqjM
 ### Usuario Admin
     administrador
 ### Contraseña Usuario Admin
